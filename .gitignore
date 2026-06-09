@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+checkpoints/
+results/
+logs/
+runs/
+wandb/
+swanlog/
+
+data/
+
+# Model weights are distributed separately.
+weights/**/*.pth
+!weights/README.md

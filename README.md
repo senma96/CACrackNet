@@ -21,22 +21,16 @@ the released model matches the paper checkpoint path.
 
 ## Environment
 
-The verified server environment used during paper experiments was:
-
-```text
-Host: 192.168.18.171
-Project: /data/users/hanyaojia/model/scsegamba-AGCF
-Conda env: /data/users/hanyaojia/anaconda3/envs/SCSegamba
-GPU used for FPS: Tesla V100-PCIE-32GB
-```
-
 Install dependencies in a new environment:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-The code expects a PyTorch/CUDA installation compatible with your GPU.
+The code expects a PyTorch/CUDA installation compatible with your GPU. The
+reported FPS was measured with FP32 inference on a Tesla V100-PCIE-32GB.
+
+Use local paths for datasets, checkpoints, and outputs in the examples below.
 
 ## Dataset Layout
 

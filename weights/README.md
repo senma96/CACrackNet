@@ -20,7 +20,7 @@ weights/
 
 ## Selected Results
 
-| Dataset | Remote run | Best epoch | ODS | OIS | P | R | F1 | mIoU |
+| Dataset | Run ID | Best epoch | ODS | OIS | P | R | F1 | mIoU |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | DeepCrack | `2026_05_29_02:17:07_Dataset->DeepCrack` | 63 | 0.9149412119 | 0.9217295498 | 0.9136153338 | 0.9446265703 | 0.9288621868 | 0.9199894078 |
 | Crack500 | `2026_06_03_07:27:24_Dataset->Crack500` | 20 | 0.7398571956 | 0.7512494590 | 0.7791525156 | 0.7864974059 | 0.7828077323 | 0.7896508400 |
@@ -39,11 +39,8 @@ b5bac765d4cdbcebd73836a91bce823406f661d23bc1929176d459591da52670  original DeepC
 
 ## Release Checkpoint Hashes
 
-The local release directory was synchronized from the verified server package:
-
-```text
-/data/users/hanyaojia/model/CACrackNet_release_20260609
-```
+The release checkpoints are model-state-only files converted from the selected
+paper checkpoints.
 
 ```text
 fcc7b86b0e07e58ffe24e995dd1170b12daada2a27e3f560759de8864bde0148  weights/DeepCrack/checkpoint_best.pth
@@ -53,14 +50,7 @@ fcc7b86b0e07e58ffe24e995dd1170b12daada2a27e3f560759de8864bde0148  weights/DeepCr
 
 ## Release Re-Verification
 
-The synchronized release was re-run on the server with the converted
-model-state-only checkpoints.
-
-```text
-DeepCrack dataset: /data/users/hanyaojia/model/scsegamba-AGCF/data/DeepCrack
-Crack500 dataset:  /data/users/zhangzj/data/datasets/Crack500
-CrackMap dataset:  /data/users/zhangzj/data/datasets/CrackMap
-```
+The release code was re-run with the converted model-state-only checkpoints.
 
 | Dataset | Results dir | ODS | OIS | P | R | F1 | mIoU |
 |---|---|---:|---:|---:|---:|---:|---:|
